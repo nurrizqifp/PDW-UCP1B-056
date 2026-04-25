@@ -3,55 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Community - Galeri</title>
+    <title>Tech Community | Multimedia</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Tech Community</a>
+            <a class="navbar-brand fw-bold" href="index.html">Tech Community</a>
             <div class="navbar-nav ms-auto">
-                <a class="nav-link" href="index.html">Beranda</a>
-                <a class="nav-link" href="form.html">Pendaftaran</a>
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="form.html">Join Us</a>
                 <a class="nav-link active" href="gallery.html">Multimedia</a>
             </div>
         </div>
     </nav>
 
-    <div class="container py-5">
-        <h2 class="text-center mb-5">Konten Multimedia</h2>
+    <div class="container pb-5">
+        <h2 class="text-center mb-5">Galeri Media</h2>
         <div class="row g-4">
             <div class="col-md-4">
-                <div class="card p-3 shadow-sm text-center">
-                    <h5>Gambar Tech</h5>
-                    <div class="media-container mb-3">
-                        <img id="techImg" src="https://picsum.photos/400/250?tech" alt="Community Image">
-                    </div>
-                    <button class="btn btn-info text-white" onclick="changeImage()">Ganti Gambar</button>
+                <div class="card h-100 p-3 shadow-sm media-box">
+                    <img id="techImg" src="https://picsum.photos/400/250?tech" alt="Random Tech">
+                    <button class="btn btn-outline-dark mt-3" onclick="changeImage()">Ganti Gambar</button>
                 </div>
             </div>
-            
             <div class="col-md-4">
-                <div class="card p-3 shadow-sm text-center">
-                    <h5>Video YouTube</h5>
-                    <div class="ratio ratio-16x9 mb-3">
-                        <iframe src="https://www.youtube.com/embed/fHI8X4OXW6Y" allowfullscreen></iframe>
+                <div class="card h-100 p-3 shadow-sm">
+                    <div class="ratio ratio-16x9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/LPZh9BOjkQs?si=rT6QU29CfKJmbvDz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
-                    <button class="btn btn-warning" onclick="showVideoInfo()">Info Video</button>
+                    <button class="btn btn-outline-info mt-3" onclick="alert('Video Embed dari YouTube')">Info Video</button>
                 </div>
             </div>
-
             <div class="col-md-4">
-                <div class="card p-3 shadow-sm text-center">
-                    <h5>Audio Podcast</h5>
-                    <div class="bg-light p-4 rounded mb-3">
-                        <audio id="audioPlayer" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
-                        <p class="small text-muted">SoundHelix Sample</p>
+                <div class="card h-100 p-3 shadow-sm text-center">
+                    <div class="p-4 bg-light rounded border mb-3">
+                        <audio id="audioPlayer" src="https://codeskulptor-demos.commondatastorage.googleapis.com/GalaxyInvaders/theme_01.mp3"></audio>
+                        <p class="mb-0 text-muted">Audio Sample</p>
                     </div>
                     <div class="d-flex justify-content-center gap-2">
-                        <button class="btn btn-success" onclick="controlAudio('play')">Play</button>
-                        <button class="btn btn-danger" onclick="controlAudio('pause')">Stop</button>
+                        <button class="btn btn-success px-4" onclick="controlAudio('play')">Play</button>
+                        <button class="btn btn-danger px-4" onclick="controlAudio('pause')">Stop</button>
                     </div>
                 </div>
             </div>
